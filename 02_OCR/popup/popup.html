@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OCR Word Card</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 220px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #1a1a2e;
+      color: #e0e0e0;
+      padding: 16px;
+    }
+    h1 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #4a9eff;
+      margin-bottom: 14px;
+      letter-spacing: 0.5px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px 14px;
+      margin-bottom: 8px;
+      background: #16213e;
+      color: #e0e0e0;
+      border: 1px solid #2a2a4a;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.15s;
+    }
+    button:hover { background: #0f3460; border-color: #4a9eff; }
+    button:last-child { margin-bottom: 0; }
+    .icon { margin-right: 8px; }
+  </style>
+</head>
+<body>
+  <h1>OCR Word Card</h1>
+  <button id="btn-wordlist"><span class="icon">📚</span>開啟單字列表</button>
+  <button id="btn-settings"><span class="icon">⚙️</span>設定 API Key</button>
+  <script src="popup.js"></script>
+</body>
+</html>

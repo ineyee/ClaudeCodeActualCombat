@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>單字列表 - OCR Word Card</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0f0f1a;
+      color: #e0e0e0;
+      min-height: 100vh;
+      padding: 24px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+    h1 { font-size: 22px; color: #4a9eff; }
+    #count { font-size: 13px; color: #888; }
+    #empty {
+      text-align: center;
+      color: #555;
+      margin-top: 80px;
+      font-size: 15px;
+      line-height: 2;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: #16213e;
+      border: 1px solid #2a2a4a;
+      border-radius: 12px;
+      padding: 16px;
+      position: relative;
+      transition: border-color 0.2s;
+    }
+    .card.pinned { border-color: #f0a500; }
+    .card-word {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 2px;
+    }
+    .card-pos {
+      font-size: 11px;
+      color: #4a9eff;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+    .card-chinese {
+      font-size: 16px;
+      color: #f0c040;
+      margin-bottom: 12px;
+    }
+    .card-example {
+      font-size: 12px;
+      color: #aaa;
+      font-style: italic;
+      margin-bottom: 4px;
+      line-height: 1.5;
+    }
+    .card-example-zh {
+      font-size: 12px;
+      color: #888;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+    .card-actions {
+      display: flex;
+      gap: 8px;
+    }
+    .btn {
+      flex: 1;
+      padding: 6px 0;
+      border: 1px solid #2a2a4a;
+      border-radius: 6px;
+      background: transparent;
+      color: #aaa;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: #0f3460; color: #fff; border-color: #4a9eff; }
+    .btn-pin.active { color: #f0a500; border-color: #f0a500; }
+    .btn-delete:hover { background: #3a1010; color: #ff6b6b; border-color: #ff6b6b; }
+    .pin-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📚 單字列表</h1>
+    <span id="count"></span>
+  </header>
+  <div id="empty" style="display:none">
+    還沒有單字卡<br>
+    <small>使用 Alt+Shift+O 或右鍵選單來 OCR 選取英文單字</small>
+  </div>
+  <div id="grid"></div>
+  <script src="wordlist.js"></script>
+</body>
+</html>
