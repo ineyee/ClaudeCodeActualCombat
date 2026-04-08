@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"https://api.open-meteo.com/v1/forecast?latitude=31.2304&longitude=121.4737&current_weather=true&timezone=Asia%2FShanghai\")"
+    ]
+  }
+}
