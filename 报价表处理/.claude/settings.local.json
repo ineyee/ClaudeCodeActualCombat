@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "Bash(python3 -)",
+      "Bash(pip3 install:*)",
+      "Bash(python3:*)",
+      "Bash(python3 -c *)",
+      "Skill(update-config)",
+      "Bash(mv /Users/ineyee/Desktop/CC/报价表处理/.claude/skills/合并报价表 /Users/ineyee/Desktop/CC/报价表处理/.claude/skills/merge-quotes)",
+      "Bash(mv /Users/ineyee/Desktop/CC/报价表处理/.claude/skills/计算售价 /Users/ineyee/Desktop/CC/报价表处理/.claude/skills/calc-price)",
+      "WebSearch",
+      "WebFetch(domain:yingtu.ai)",
+      "WebFetch(domain:gradually.ai)",
+      "WebFetch(domain:claude.nagdy.me)",
+      "WebFetch(domain:lattice.uptownhr.com)",
+      "WebFetch(domain:docs.claude.com)",
+      "WebFetch(domain:automateanddeploy.com)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "WebFetch(domain:www.anthropic.com)",
+      "WebFetch(domain:linuxbeast.com)",
+      "WebFetch(domain:www.datacamp.com)",
+      "WebFetch(domain:jangwook.net)",
+      "WebFetch(domain:kelvinmai.io)"
+    ]
+  }
+}
