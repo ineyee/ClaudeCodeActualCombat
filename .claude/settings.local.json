@@ -1,7 +1,21 @@
 {
   "permissions": {
     "allow": [
-      "Bash(curl -s \"https://api.open-meteo.com/v1/forecast?latitude=31.2304&longitude=121.4737&current_weather=true&timezone=Asia%2FShanghai\")"
+      "Bash(curl -s \"https://api.open-meteo.com/v1/forecast?latitude=31.2304&longitude=121.4737&current_weather=true&timezone=Asia%2FShanghai\")",
+      "WebSearch",
+      "WebFetch(domain:www.aimakerslab.io)",
+      "WebFetch(domain:institute.sfeir.com)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "WebFetch(domain:paddo.dev)",
+      "WebFetch(domain:debugg.ai)",
+      "WebFetch(domain:blakecrosley.com)",
+      "WebFetch(domain:codesignal.com)",
+      "WebFetch(domain:docs.superagent.sh)",
+      "WebFetch(domain:andrewford.co.nz)",
+      "WebFetch(domain:madflex.de)",
+      "WebFetch(domain:alexop.dev)",
+      "WebFetch(domain:kjetilfuras.com)",
+      "WebFetch(domain:onmyway133.com)"
     ]
   }
 }
