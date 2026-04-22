@@ -2,7 +2,10 @@
   "name": "purchase-quote-tools",
   "version": "1.0.0",
   "description": "采购报价表处理工具：合并报价表 + 计算售价",
-  "author": "你的名字",
+  "author": {
+    "name": "yiyi",
+    "email": "yiyi@example.com"
+  },
   "components": {
     "agents": [
       "agents/merge-quotes.md",
