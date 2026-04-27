@@ -1,0 +1,1 @@
+{"root":["./src/main.ts","./src/types.ts","./src/composables/usetasks.ts","./src/app.vue","./src/components/appfooter.vue","./src/components/filterbar.vue","./src/components/taskinput.vue","./src/components/taskitem.vue","./src/components/tasklist.vue"],"version":"5.9.3"}
